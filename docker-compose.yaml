@@ -1,0 +1,10 @@
+version: "3"
+services:
+  postgres:
+    build: ./postgres
+    ports:
+      - "5433:5432"
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: ppp
+      POSTGRES_DB: ai_hackathon
